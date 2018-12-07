@@ -135,6 +135,9 @@ body {
 .contenedor h1 {
   margin-top: 6rem; }
 
+.contenedor-objetivo {
+  background: #9A2EFE; }
+
 .btn-bajar {
   margin-top: 1rem;
   font-size: 2rem;
@@ -149,10 +152,19 @@ body {
 .imagenes h1 {
   text-align: center; }
 
+.contenedor-objetivo h1 {
+  font-family: 'Open Sans', bold;
+  font-weight: 800; }
+
 /* ESTILO PIE DE PAGINA */
+.pie-de-pagina {
+  background: #111; }
+
 .pie-de-pagina p {
   text-align: left;
-  font-size: .9rem; }
+  font-size: .9rem;
+  color: white;
+  padding: 1rem 0 0 0; }
 
 .pie-de-pagina .apps {
   display: -webkit-box;
@@ -161,10 +173,23 @@ body {
   list-style: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin: 0;
+  padding: 0; }
 
 .pie-de-pagina .apps ul li {
-  color: #fff; }
+  color: white; }
+
+.pie-de-pagina .apps a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  opacity: .7; }
+
+.pie-de-pagina .apps a:hover {
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
 
 @-webkit-keyframes anim-flecha {
   from {
