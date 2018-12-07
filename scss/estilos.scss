@@ -1,0 +1,219 @@
+// ---------------------------------
+// PATRON DE COLORES 
+// ----------------------------------
+
+$texto: #111111 ;
+$principal: #9A2EFE;
+$secundario: #009500; 
+
+html {
+    font-size: 15px;
+}
+
+
+body {
+    background: $principal;
+    font-family: 'Open Sans', sans-serif;
+    color:  $texto;
+    align-items: center;
+}
+
+.encabezado {
+    background: $texto;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+.encabezado .container {
+    display: flex;
+    align-items: center;   
+    flex-wrap: wrap; 
+}
+
+.encabezado .container img {
+    height: auto;
+    width: 80px;
+}
+
+.boton-bajar {
+    text-align: center;
+}
+
+/* ESTILO PARA BOTON BUSCAR Y MENU */
+
+
+.boton-buscar, .boton-menu {
+  color: white;
+  background: transparent;
+  margin: 0;
+  border: 0;
+  font-size: 2rem;
+  padding: 0 .2rem;
+  justify-content: flex-end;
+ }
+
+.boton-buscar {
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+
+.boton-buscar:focus, .boton-menu:focus {
+    outline: 0;
+}
+
+.contenedor-bloque-buscar input[type="text"] {
+  border-radius: 5px 0 0 5px;
+  border: 0;
+  flex: 1 1 auto;
+  padding: 1rem;
+  background: white; }
+
+.contenedor-bloque-buscar input[type="submit"] {
+  border-radius: 0 5px 5px 0;
+  border: 0;
+  padding: 1rem;
+  background: $principal; }
+
+.contenedor {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contenedor p {
+    margin-top: 3.5rem;
+}
+
+.contenedor2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+}
+
+/* ESTILO BLOQUE BUSCAR */
+
+#bloque-buscar {
+    flex: 1 1 100%; 
+}
+
+.contenedor-bloque-buscar {
+    height: 3rem;
+    display: flex;
+    margin: 1rem 0;
+}
+
+/* ESTILO MENU */
+
+#menu-principal {
+    flex: 1 1 100%; 
+}
+
+#menu-principal ul {
+    padding: 0;
+    list-style: none;
+    margin: 1rem 0 0 0;
+}
+
+#menu-principal ul li a{
+    display: block;
+    padding: .5rem 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    border-top: 1px solid $principal;
+    text-decoration: none;
+}
+
+#menu-principal ul li a:hover,
+#menu-principal ul li.active a{
+color: $principal;
+}
+
+/* ESTILO PAGINA PRINCIPAL */
+
+.contenedor .btn-primary{
+    color: #fff;
+    background-color: $principal;
+    border-color: transparent;
+    margin-top: 2rem;
+    transition: all .5s ease;
+}
+
+.contenedor .btn-primary:hover:active{
+    color: #fff;
+    background-color: $secundario;
+    border-color: transparent;
+    margin-top: 2rem;
+}
+
+.contenedor h1 {
+    margin-top: 6rem;
+}
+
+.btn-bajar {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: $principal;
+}
+
+.boton-bajar a{
+    display: inline-block;
+    animation: anim-flecha 2s ease-in-out infinite;
+}
+
+
+/* ESTILO PAGINA 2 */
+
+.imagenes h1 {
+    text-align: center;
+}
+
+
+
+
+/* ESTILO PIE DE PAGINA */
+
+
+.pie-de-pagina p {
+    text-align: left ;
+    font-size: .9rem;
+}
+
+
+.pie-de-pagina .apps {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.pie-de-pagina .apps ul li {
+    color: #fff;
+}
+
+
+
+
+
+
+@keyframes anim-flecha {
+    from { transform: translateY(0);
+    }
+    50% { transform: translateY(5px);
+    }
+    to { transform: translateY(0);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+/*# sourceMappingURL=estilos.css.map */
