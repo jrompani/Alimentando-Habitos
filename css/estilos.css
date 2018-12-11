@@ -184,6 +184,14 @@ body {
 .contenedor-objetivo-imagen img {
   padding-top: 2rem; }
 
+.ebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.section-experiencias {
+  margin-top: 5rem; }
+
 /* ESTILO PIE DE PAGINA */
 .pie-de-pagina {
   background: #111; }
