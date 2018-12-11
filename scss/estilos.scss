@@ -83,7 +83,7 @@ body {
 }
 
 .contenedor p {
-    margin-top: 3.5rem;
+    margin-top: 7.5rem;
 }
 
 .contenedor2 {
@@ -138,7 +138,7 @@ color: $principal;
     color: #fff;
     background-color: $principal;
     border-color: transparent;
-    margin-top: 2rem;
+    margin-top: 10rem;
     transition: all .5s ease;
 }
 
@@ -177,7 +177,38 @@ color: $principal;
 .contenedor-objetivo h1{
     font-family: 'Open Sans', bold;
     font-weight: 800;
+    padding-top: 2rem;
 }
+
+.contenedor-objetivo h4 {
+    margin-top: 3rem;
+}
+
+.contenedor-objetivo p {
+    margin-top: 3rem;
+}
+
+.asesoria {
+    display: flex;
+}
+
+.contenedor-objetivo-imagen {
+    border: 2px solid #F2F2F2;
+    flex-wrap: wrap;
+    width: 350px;
+    margin: 4rem auto;
+    height: 400px;
+    box-shadow: 10px 6px 58px -12px rgba(0,0,0,0.4);
+}
+
+.contenedor-objetivo-imagen p{
+    margin-top: 3rem;
+}
+
+.contenedor-objetivo-imagen img{
+    padding-top: 2rem;
+}
+
 
 /* ESTILO PIE DE PAGINA */
 
