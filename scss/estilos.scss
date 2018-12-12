@@ -6,279 +6,167 @@ $texto: #111111 ;
 $principal: #9A2EFE;
 $secundario: #009500; 
 
+@charset "UTF-8";
 html {
-    font-size: 15px;
-}
+  font-size: 15px; }
 
 
 body {
-    background: $principal;
-    font-family: 'Open Sans', sans-serif;
-    color:  $texto;
-    align-items: center;
-}
+  font-family: 'Open Sans', sans-serif;
+  color: #111111; }
+
+
+
+// ---------------------------------
+// ENCABEZADO 
+// ----------------------------------
 
 .encabezado {
-    background: $texto;
-    color: #fff;
-    padding: .5rem 0;
-}
-
-.encabezado .container {
     display: flex;
-    align-items: center;   
-    flex-wrap: wrap; 
+    background: #111111;
+    padding: 5rem 0;
 }
 
 .encabezado .container img {
     height: auto;
-    width: 80px;
+    width: 100px;
 }
 
-.boton-bajar {
-    text-align: center;
+.encabezado .container {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
 }
 
-/* ESTILO PARA BOTON BUSCAR Y MENU */
+// ---------------------------------
+// MENU 
+// ----------------------------------
 
 
-.boton-buscar, .boton-menu {
-  color: white;
-  background: transparent;
-  margin: 0;
-  border: 0;
-  font-size: 2rem;
-  padding: 0 .2rem;
-  justify-content: flex-end;
- }
 
 .boton-buscar {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 2rem;
     margin-left: auto;
-    margin-right: 2rem;
+    margin-right: .8rem;
 }
 
 
-.boton-buscar:focus, .boton-menu:focus {
-    outline: 0;
+.boton-menu {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 2rem;
 }
-
-.contenedor-bloque-buscar input[type="text"] {
-  border-radius: 5px 0 0 5px;
-  border: 0;
-  flex: 1 1 auto;
-  padding: 1rem;
-  background: white; }
-
-.contenedor-bloque-buscar input[type="submit"] {
-  border-radius: 0 5px 5px 0;
-  border: 0;
-  padding: 1rem;
-  background: $principal; }
-
-.contenedor {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.contenedor p {
-    margin-top: 7.5rem;
-}
-
-.contenedor2 {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 8rem;
-    padding-bottom: 2rem;
-}
-
-/* ESTILO BLOQUE BUSCAR */
-
-#bloque-buscar {
-    flex: 1 1 100%; 
-}
-
-.contenedor-bloque-buscar {
-    height: 3rem;
-    display: flex;
-    margin: 1rem 0;
-}
-
-/* ESTILO MENU */
 
 #menu-principal {
-    flex: 1 1 100%; 
+    flex: 1 1 100%;
 }
 
-#menu-principal ul {
+#menu-principal ul{
     padding: 0;
     list-style: none;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0 0;   
 }
 
-#menu-principal ul li a{
-    display: block;
+#menu-principal ul a{
     padding: .5rem 0;
     text-align: center;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
-    border-top: 1px solid $principal;
+    border-bottom: 1px solid $principal;
+    display: block;
     text-decoration: none;
 }
 
-#menu-principal ul li a:hover,
-#menu-principal ul li.active a{
-color: $principal;
-}
-
-/* ESTILO PAGINA PRINCIPAL */
-
-.contenedor .btn-primary{
-    color: #fff;
-    background-color: $principal;
-    border-color: transparent;
-    margin-top: 10rem;
-    transition: all .5s ease;
-}
-
-.contenedor .btn-primary:hover:active{
-    color: #fff;
-    background-color: $secundario;
-    border-color: transparent;
-    margin-top: 2rem;
-}
-
-.contenedor h1 {
-    margin-top: 6rem;
-}
-
-.contenedor-objetivo {
-    background: $principal;
-}
-
-.btn-bajar {
-    margin-top: 1rem;
-    font-size: 2rem;
+#menu-principal ul li.active a, #menu-principal ul a:hover{
     color: $principal;
 }
 
-.boton-bajar a{
-    display: inline-block;
-    animation: anim-flecha 2s ease-in-out infinite;
+
+
+// ----------------------------------
+// ESTILO BLOQUE BUSCAR
+// ----------------------------------
+
+#bloque-buscar {
+    flex: 1 1 100%;
+    margin-top: 2rem;
 }
 
-
-/* ESTILO PAGINA 2 */
-
-.imagenes h1 {
-    text-align: center;
-}
-.contenedor-objetivo h1{
-    font-family: 'Open Sans', bold;
-    font-weight: 800;
-    padding-top: 2rem;
-}
-
-.contenedor-objetivo h4 {
-    margin-top: 3rem;
-}
-
-.contenedor-objetivo p {
-    margin-top: 3rem;
-}
-
-.asesoria {
+.contenedor-bloque-buscar {
     display: flex;
+    height: 3rem;
+    margin: 1rem 0;
 }
 
-.contenedor-objetivo-imagen {
-    border: 2px solid #F2F2F2;
-    flex-wrap: wrap;
-    width: 350px;
-    margin: 4rem auto;
-    height: 400px;
-    box-shadow: 10px 6px 58px -12px rgba(0,0,0,0.4);
+.contenedor-bloque-buscar input[type="text"] {
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    padding: 1rem;
 }
 
-.contenedor-objetivo-imagen p{
+.contenedor-bloque-buscar input[type="submit"] {
+    flex: 1 1 auto;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    padding: 1rem;
+    background: $principal;
+    color: #fff;
+}
+
+
+
+
+// ---------------------------------
+// ENCABEZADO 
+// ----------------------------------
+
+.texto-encabezado {
+  display: flex;
+}
+
+.contenedor {
+    flex: 1 1 100%;
+    margin-top: 7.6rem;
+}
+
+
+.contenedor h1 {
+    margin: 2rem 0 0 0;
+}
+
+.contenedor p {
     margin-top: 3rem;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
-.contenedor-objetivo-imagen img{
-    padding-top: 2rem;
+.btn {
+    margin-bottom: 3rem;
 }
 
-.ebook {
-    display: flex;
+.boton-bajar a {
+    font-size: 2rem;
+    display: inline-block; /* para que funcione la animación de JS */
+    animation: animar-flecha 1.5s ease-in-out infinite;
 }
 
-.section-experiencias {
-    margin-top: 5rem;
-}
-
-
-
-
-
-
-/* ESTILO PIE DE PAGINA */
-
-
-.pie-de-pagina {
-    background: #111;
-}
-
-.pie-de-pagina p {
-    text-align: left ;
-    font-size: .9rem;
-    color: white;
-    padding: 1rem 0 0 0;
-}
-
-
-.pie-de-pagina .apps {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.pie-de-pagina .apps ul li {
-    color: white;
-}
-
-.pie-de-pagina .apps a {
-    color: white;
-    font-size: 1.5rem;
-    margin: 0 1rem;
-    opacity: .7;
-}
-
-.pie-de-pagina .apps a:hover {
-    opacity: 1;
-    transition: all .5s ease;
-}
-
-
-
-
-
-
-@keyframes anim-flecha {
-    from { transform: translateY(0);
+@keyframes animar-flecha{
+    from{ 
+        transform: translateY(0);
+        
     }
-    50% { transform: translateY(5px);
+    50%{
+       transform: translateY(6px); 
     }
-    to { transform: translateY(0);
+    to{
+        transform: translateY(0);
     }
     
 }
-
-
-
-
 
 
 
