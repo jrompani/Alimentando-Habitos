@@ -3,17 +3,22 @@
 // ----------------------------------
 
 $texto: #111111 ;
-$principal: #9A2EFE;
+$principal: #8904B1;
 $secundario: #009500; 
+$tercero: #D0A9F5;
 
 @charset "UTF-8";
 html {
-  font-size: 15px; }
+   font-size: 16px; 
+   line-height: 3rem;
+   font-style: italic;
+}
 
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #111111; }
+    font-family: Open Sans !important;
+    font-weight: 300 !important;
+}
 
 
 
@@ -37,6 +42,8 @@ body {
     display: flex;
     align-items: center;
 }
+
+
 
 // ---------------------------------
 // MENU 
@@ -139,9 +146,7 @@ body {
 }
 
 .contenedor p {
-    margin-top: 3rem;
-    font-size: 1.2rem;
-    font-style: italic;
+    margin-top: 3rem;  
 }
 
 .btn {
@@ -166,6 +171,122 @@ body {
         transform: translateY(0);
     }
     
+}
+
+.contenedor-objetivo{
+    background: $principal;
+    color: white;
+    line-height: 4rem;
+}
+
+.objetivos .contenedor-objetivo-imagen1{
+    border: 1px solid transparent;
+    width: 300px;
+    box-shadow: 10px 10px 52px -16px rgba(0,0,0,0.47);
+    display: inline-block;
+    margin: 15px 0 15px 0;
+}
+
+.objetivos .contenedor-objetivo-imagen2{
+    border: 1px solid transparent;
+    width: 300px;
+    box-shadow: 10px 10px 52px -16px rgba(0,0,0,0.47);
+    display: inline-block;
+    margin: 15px 0 15px 0 ;
+}
+
+.objetivos .contenedor-objetivo-imagen3{
+    border: 1px solid transparent;
+    width: 300px;
+    box-shadow: 10px 10px 52px -16px rgba(0,0,0,0.47);
+    display: inline-block;
+    margin: 15px 0 15px 0;
+}
+
+.contenido-ebook{
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.contenido-ebook h2 {
+    color: $principal;
+}
+
+.ebook .boton2 {
+    border-radius: 40px;
+    margin-top: 3rem;
+}
+
+.section-experiencias .exp1 {
+    border: 1px solid #E6E6E6;
+    background: #fff;
+    margin-top: 1rem;
+}
+
+.section-experiencias .exp2 {
+    border: 1px solid #E6E6E6;
+    background: #fff;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.section-experiencias {
+    background: #F2F2F2;
+}
+
+.nombres {
+    color: $tercero;
+    font-weight: 800;
+}
+
+.section-experiencias h3{
+    font-weight: 700;
+}
+
+.container p{
+    font-style: normal;
+}
+
+.section-informate h1 {
+    color: $principal;
+}
+
+.section-informate{
+    text-align: center;
+}
+
+.pie-de-pagina{
+    background: #0B3861;
+    color: white;
+    padding-top: 1rem;
+}
+
+.pie-de-pagina{
+    background: #086A87;
+    color: white;
+    padding-top: 1rem;
+}
+
+.pie-de-pagina ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.pie-de-pagina ul li{
+    display: inline-block;
+}
+
+
+// ---------------------------------
+// PAGINA REPROGRAMACION 
+// ----------------------------------
+
+.segundapagina {
+    margin-top: 2rem;
+}
+
+.btn-secondary{
+    background-color: #8064A2 !important;
 }
 
 
