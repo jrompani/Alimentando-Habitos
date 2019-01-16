@@ -211,10 +211,41 @@ body {
 .section-informate {
   text-align: center; }
 
+.segundapagina {
+  margin-top: 2rem; }
+
+.btn-secondary {
+  background-color: #8064A2 !important; }
+
+.container-apps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.apps a {
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 1rem; }
+
+.btn-subir {
+  position: fixed;
+  bottom: .4rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #111111; }
+
 .pie-de-pagina {
   background: #0B3861;
   color: white;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  text-align: center;
+  height: 350px; }
 
 .pie-de-pagina {
   background: #086A87;
@@ -227,11 +258,5 @@ body {
 
 .pie-de-pagina ul li {
   display: inline-block; }
-
-.segundapagina {
-  margin-top: 2rem; }
-
-.btn-secondary {
-  background-color: #8064A2 !important; }
 
 /*# sourceMappingURL=estilos.css.map */
