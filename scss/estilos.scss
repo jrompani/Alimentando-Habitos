@@ -181,7 +181,7 @@ body {
 
 .objetivos .contenedor-objetivo-imagen1{
     border: 1px solid transparent;
-    width: 300px;
+    width: 290px;
     box-shadow: 10px 10px 52px -16px rgba(0,0,0,0.47);
     display: inline-block;
     margin: 15px 0 15px 0;
@@ -189,7 +189,7 @@ body {
 
 .objetivos .contenedor-objetivo-imagen2{
     border: 1px solid transparent;
-    width: 300px;
+    width: 290px;
     box-shadow: 10px 10px 52px -16px rgba(0,0,0,0.47);
     display: inline-block;
     margin: 15px 0 15px 0 ;
@@ -197,7 +197,7 @@ body {
 
 .objetivos .contenedor-objetivo-imagen3{
     border: 1px solid transparent;
-    width: 300px;
+    width: 290px;
     box-shadow: 10px 10px 52px -16px rgba(0,0,0,0.47);
     display: inline-block;
     margin: 15px 0 15px 0;
@@ -232,6 +232,7 @@ body {
 
 .section-experiencias {
     background: #F2F2F2;
+    padding-top: 2rem;
 }
 
 .nombres {
@@ -269,6 +270,32 @@ body {
 .btn-secondary{
     background-color: #8064A2 !important;
 }
+
+.contenedor-redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.recuadro-redes{
+    border: 1px solid #fff;
+    width: 250px;
+    border-radius: 2%;
+    text-align: center;
+}
+
+.testim1, .testim2{
+    border-radius: 50%;
+}
+
+.box-interna{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
 
 
 // ---------------------------------
