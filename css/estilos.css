@@ -29,6 +29,17 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .boton-buscar {
   background: transparent;
   border: 0;
@@ -251,6 +262,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 1rem; }
+
+.row p {
+  color: #A4A4A4; }
 
 .container-apps {
   display: -webkit-box;

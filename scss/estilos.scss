@@ -43,6 +43,15 @@ body {
     align-items: center;
 }
 
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 
 
 // ---------------------------------
@@ -296,6 +305,9 @@ body {
     margin-top: 1rem;
 }
 
+.row p{
+    color: #A4A4A4;
+}
 
 
 // ---------------------------------
