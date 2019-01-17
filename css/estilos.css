@@ -290,16 +290,20 @@ body {
   color: #111111; }
 
 .pie-de-pagina {
-  background: #0B3861;
-  color: white;
-  padding-top: 1rem;
-  text-align: center;
-  height: 350px; }
-
-.pie-de-pagina {
   background: #086A87;
   color: white;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  height: 350px;
+  padding-top: 1rem;
+  text-align: center; }
+
+.contenedor-redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%; }
 
 .pie-de-pagina ul {
   list-style: none;
@@ -307,5 +311,65 @@ body {
 
 .pie-de-pagina ul li {
   display: inline-block; }
+
+/* Smaller than standard 960 (devices and browsers) */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+/* All Mobile Sizes (devices and browser) */
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+.texto-encabezado-acerca {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contenedor-acerca {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  background: red;
+  height: 500px;
+  background-image: url(../Imagenes/acerca_de_vale.jpg);
+  background-position: center; }
+
+.contenedor-acerca h1 {
+  padding-top: 19.5rem;
+  color: #fff; }
+
+.propuesta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.propuesta ul {
+  list-style: none; }
+
+.propuesta ul li i {
+  color: #8904B1;
+  padding-right: 1rem; }
+
+.propuesta ul li {
+  line-height: 2.5rem; }
+
+.propuesta p {
+  margin-top: 1rem;
+  color: #8904B1;
+  font-family: serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: center; }
+
+#foto-vale {
+  height: 250px;
+  width: 300px; }
+
+.propuesta h2 {
+  font-weight: 700; }
 
 /*# sourceMappingURL=estilos.css.map */
