@@ -143,12 +143,12 @@ body {
 
 .texto-encabezado {
   display: flex;
+  background-image: url(../Imagenes/acerca_de_vale.jpg);
 }
 
 .contenedor {
     flex: 1 1 100%;
     margin-top: 7.6rem;
-
 }
 
 
@@ -409,7 +409,6 @@ body {
 
 .contenedor-acerca {
     flex: 1 1 100%;
-    background: red;
     height: 500px;
     background-image: url(../Imagenes/acerca_de_vale.jpg);
     background-position: center;
