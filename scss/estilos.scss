@@ -28,7 +28,7 @@ body {
 
 .encabezado {
     display: flex;
-    background: #111111;
+    background: transparent;
     padding: 5rem 0;
 }
 
@@ -79,6 +79,7 @@ body {
 
 #menu-principal {
     flex: 1 1 100%;
+    background: black;
 }
 
 #menu-principal ul{
@@ -460,12 +461,23 @@ body {
     font-weight: 700;
 }
 
-.convencerse h3{
+.conven{
+    display: flex;
+    flex-direction: column;
+}
+
+.conven h3{
     text-align: center;
     border: solid $principal;
     border-width: 1.5px 0 1.5px 0;
-    width: 290px;
-    padding: 1rem 0 1rem 0;
+    width: 95%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.convencerse div{
+    justify-content: center;
+    align-items: center;
 }
 
 .parte3{
@@ -477,6 +489,9 @@ body {
 .separador{
     height: 100px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
 }
 
 .contenedor-historia {
@@ -501,12 +516,14 @@ body {
     color: $principal;
     font-weight: 700;
     text-align: center;
+    font-family: serif;
+    font-size: 1rem;
 }
 
 #texto3{
     border: solid $principal;
     border-width: 1.5px 0 1.5px 0;
-    margin-top: 3rem;
+    margin: 3rem 0 3rem 0;
     padding: 1rem 0 1rem 0;
     text-align: center;
 }
@@ -520,15 +537,25 @@ body {
     width: 290px;
     box-shadow: 10px 10px 52px -16px rgba(0,0,0,0.47);
     display: inline-block;
-    margin: 15px 0 15px 0;
+    margin: 0 0 15px 0;
+    height: 400px;
+}
+
+.contenedor1 img {
+    padding-top: 1rem;
 }
 
 .contenedor2 {
     border: 2px solid #F2F2F2;
     width: 290px;
+    height: 400px;
     box-shadow: 10px 10px 52px -16px rgba(0,0,0,0.47);
     display: inline-block;
-    margin: 15px 0 15px 0;
+    margin: 0 0 15px 0;
+}
+
+.contenedor2 img{
+    padding-top: 1rem;
 }
 
 .contenedor3 {
@@ -536,12 +563,44 @@ body {
     width: 290px;
     box-shadow: 10px 10px 52px -16px rgba(0,0,0,0.47);
     display: inline-block;
-    margin: 15px 0 15px 0;
+    margin: 0 0 15px 0;
+    height: 400px;
 }
 
-.row h2{
+.contenedor3 img{
+    padding-top: 1rem;
+}
+
+.row .contenedor0{
     background: $principal;
     color: #fff;
     border-radius: 10px 10px 0 0;
-    width: 290px;
+    margin-bottom: auto;
+}
+
+//.carousel, .carousel-inner > .item > img {
+//  height: 300px;
+//  width: 300px;
+//} 
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+
+.carousel-inner .carousel-item-left.active, 
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
+}
+  
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+  
 }
